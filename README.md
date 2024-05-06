@@ -6,54 +6,38 @@ WaterGuard is a reliable and accurate system that can help people stay informed 
 
 ## Table Of Contents
 
-- [Prototype Overview](#prototype-overview)
+- [WaterGuard IoT GitHub Repository](#waterguard-iot-github-repository)
 - [Getting Started](#getting-started)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Contributors](#contributors)
 
-## Prototype Overview 
-WaterGuard IoT is a our physical flood monitoring and alerting model that works in tandem with our WaterGuard application to provide real-time alerts to local communities when floods or dangerous water level rise is detected. WaterGuard IoT also streams data to our Firebase Realtime Database, which uses Google Cloud Platform to predict potential floods using machine learning and update our application accordingly. Built with the NodeMCU ESP32 which can be expanded to the ESP32 SIM800L, WaterGuard IoT is able to connect to the Internet for streaming data either by using Wi-Fi or even celular connection. The model also utilzes Arduino compatible components such as the ultrosonic sensor to detect water levels, alerting buzer and a TP4056 Battery Charger and Solar Panel to ensure our model is continuosly powered. For the housing of our IoT model, we used weatherproof, waterproof and Ingress Protection standard materials which aligns with our use case of being exposed to extreme weather such as high tempreatures, rain and placed in an actively flowing water source. Some materials used for our housing are such as an IP67 Junction Box which houses all of our electronic components including the microcontroller and an PVC Class D pipe which houses the ultronic sensor and acts as a stand in the flowing water source.
-
-Components :
-1. 1 - NodeMCU ESP32 / ESP32 SIM800L
-2. 1 - SR04P Ultrasonic Ranging Module
-3. 1 - I2C 1602 Serial LCD
-4. 1 - 16.5x5.5 Breadboard
-5. 14 - 10cm Jumper Cables
-
-![flood managment system (1)](https://github.com/nickchan01/WaterGuard/assets/148427518/fc02017b-2fd4-41f7-8260-3e733661ccca)
-
+## WaterGuard IoT GitHub Repository
+https://github.com/nickchan01/WaterGuard
 
 ## Getting Started
-#This will only work with similarly built projects!
+# This will only work with similarly built projects!
 
-1. Create the project using components listed
-2. Download the source code folder and unzip 
-3. Open the source code folder on your preferred IDE (Arduino IDE Recommended)
-4. Insert Firebase API key and URL
-5. Insert Wi-Fi SSID and password
-6. Upload the code to the NodeMCU ESP32 and run 
+1. Create the WaterGuard IoT project
+2. Setup and collect data from IoT device over a certain time frame
+3. Open Google Cloud project using data from Firebase Firestore and Firebase Realtime Database
+4. Upload the code into Big Query in Google Cloud Platform and run the code
+5. Perform data visualization in Looker Studio using the forecast data from the trained ARIMA Plus model and query performed in Big Query
+6. Data in Looker Studio can be used to visualise upcoming water level prediction and to view past water level history and trends
+   
+
+<img width="1440" alt="image" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/d77536b0-e5a3-4be3-8526-f4f22f735b01">
+
+<img width="1440" alt="Screenshot 2024-05-06 at 11 54 52 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/ae5c58f1-2ecb-4d7a-8f88-6603b2a44194">
+
 
 ## Features
 - Water Level Monitoring
-- Dangerous Water Rise Alerting
-- Flood Alerting
 - Flood Prediction
-
-## Technologies
-
-Libraries, Packages and Dependencies:
-- [EEPROM Library](https://docs.arduino.cc/learn/built-in-libraries/eeprom/)
-- [Wire Library](https://www.arduino.cc/reference/en/language/functions/communication/wire/)
-- [LiquidCrystal I2C Library](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/)
-- [Software Serial Library](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
-- [WiFi Library](https://www.arduino.cc/reference/en/libraries/wifi/)
-- [Firebase Arduino Client Library for ESP8266 and ESP32 Library](https://www.arduino.cc/reference/en/libraries/firebase-arduino-client-library-for-esp8266-and-esp32/)
+- Water Level Visualization
 
 
 ## Contributors 
-
 - [Nicholas Chan Wei Xian](https://github.com/nickchan01)
 - [Ivy Chung Ai Shin](https://github.com/ICAS03)
 - [Zhe Khee Tang](https://github.com/jackyt0303)
