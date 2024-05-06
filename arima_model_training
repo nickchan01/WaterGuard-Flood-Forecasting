@@ -1,0 +1,16 @@
+CREATE or REPLACE MODEL `floodmanagement-b7bfe.waterguard_dataset.arima_flood_predict2`
+OPTIONS (
+  MODEL_TYPE = 'ARIMA_PLUS',
+  time_series_timestamp_col = 'timestamp',
+  time_series_data_col = 'data',
+  DATA_FREQUENCY = 'PER_MINUTE'
+  )
+  As
+  select data, timestamp
+  from `floodmanagement-b7bfe.waterguard_dataset.sensorDataFinal`
+
+SELECT *
+FROM ML.EXPLAIN_FORECAST(
+  MODEL `floodmanagement-b7bfe.waterguard_dataset.arima_flood_predict2`,
+  STRUCT(30 as horizon, 0.8 as confidence_level)
+)
