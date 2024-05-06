@@ -16,7 +16,7 @@ WaterGuard is a reliable and accurate system that can help people stay informed 
 https://github.com/nickchan01/WaterGuard
 
 ## Getting Started
-# This will only work with similarly built projects!
+#This will only work with similarly built projects!
 
 1. Create the WaterGuard IoT project
 2. Setup and collect data from IoT device over a certain time frame
@@ -26,9 +26,9 @@ https://github.com/nickchan01/WaterGuard
 6. Data in Looker Studio can be used to visualise upcoming water level prediction and to view past water level history and trends
    
 
-<img width="1440" alt="image" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/d77536b0-e5a3-4be3-8526-f4f22f735b01">
 
-<img width="1440" alt="Screenshot 2024-05-06 at 11 54 52 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/ae5c58f1-2ecb-4d7a-8f88-6603b2a44194">
+<img width="400" alt="Screenshot 2024-05-06 at 11 57 55 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/f8da5cbc-ec90-4460-9a17-04fbcf9f57fc">
+<img width="400" alt="Screenshot 2024-05-06 at 11 54 52 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/ae5c58f1-2ecb-4d7a-8f88-6603b2a44194">
 
 
 ## Features
