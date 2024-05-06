@@ -27,7 +27,7 @@ https://github.com/nickchan01/WaterGuard
    
 
 
-<img width="600" alt="Screenshot 2024-05-06 at 11 57 55 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/f8da5cbc-ec90-4460-9a17-04fbcf9f57fc">
+<img width="500" alt="Screenshot 2024-05-06 at 11 57 55 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/f8da5cbc-ec90-4460-9a17-04fbcf9f57fc">
 <img width="500" alt="Screenshot 2024-05-06 at 11 54 52 AM" src="https://github.com/nickchan01/WaterGuard-Flood-Forecasting/assets/148427518/ae5c58f1-2ecb-4d7a-8f88-6603b2a44194">
 
 
